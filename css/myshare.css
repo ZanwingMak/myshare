@@ -1,0 +1,202 @@
+#myshare {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 13px;
+    /*height: 45%;*/
+	height: inherit;
+    width: 100%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+	background-color:#fff;
+    z-index: 999;
+}
+
+#myshare .label {
+    width: 100%;
+    display: inline-flex;
+    font-size: 15px;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+
+#myshare .label .title{
+    flex: 1;
+    text-align: left;
+    padding-left: 5%;
+}
+
+#myshare .label .close{
+    /* flex: 0.1; */
+    text-align: right;
+    padding-right: 5%;
+    background: url(../img/close.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    width: 36px;
+    height: 20px;
+}
+
+#myshare .list {
+    width: 100%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#myshare .list span {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    margin: 8px 0;
+}
+
+#myshare .list span i {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+#myshare .weibo i {
+    background-image: url('../img/weibo.png');
+    background-size: cover;
+}
+
+#myshare .weixin i {
+    background-image: url('../img/weixin_friend.png');
+    background-size: cover;
+}
+
+#myshare .weixin_timeline i {
+    background-image: url('../img/weixin.png');
+    background-size: cover;
+}
+
+#myshare .qq i {
+    background-image: url('../img/qq.png');
+    background-size: cover;
+}
+
+#myshare .qzone i {
+    background-image: url('../img/qqzone.png');
+    background-size: cover;
+}
+
+#myshare .more i {
+    background-image: url('../img/more.png');
+    background-size: cover;
+}
+
+#myshare .QRcode i{
+    background-image: url('../img/QRcode.png');
+    background-size: cover;
+}
+
+/* 微信样式 */
+#myshareBox .closewx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0b0b0b;
+    opacity: 0.8;
+    z-index: 999;
+}
+.layer-shade {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 9;
+}
+#myshareBox .wxshare{
+	position: fixed;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+    /*background-color: #0b0b0b;*/
+    background-image: url('../img/wxshare.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+	width: 200px;
+	height: 144px;
+    z-index: 999;
+}
+/* url样式 */
+#myshareBox .url{
+    font-size: 14px;
+    margin: 0 auto;
+}
+#myshare .intro{
+    /*margin: 15% auto 0 auto;*/
+	margin: 2% auto 0;
+    font-size: 14px;
+}
+#myshareBox .url span{
+    display: inline-block;
+    border: 1px dotted gray;
+    margin: 6px auto;
+    width: 80%;
+    padding: 5px;
+    overflow: hidden;
+}
+#myshareBox a .url{
+    color: #333;
+    text-decoration: none;
+}
+#myshareBox {
+    display: none;
+}
+
+.qrcode-mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,1);
+    z-index: 10000;
+}
+.qrcode-mask .qrcode-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 200px;
+    height: 210px;
+    background: #FFF;
+}
+.qrcode-mask .qrcode-box h3 {
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+}
+.qrcode-mask .qrcode-box .qrcode {
+    margin-left: 20px;
+}
+.qrcode-mask .qrcode-box .qrcode-close {
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    line-height: 30px;
+    color: #FFF;
+    text-align: center;
+    background: url(../img/QRclose.png) 0 0 no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
