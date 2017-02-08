@@ -29,5 +29,7 @@ var config = {
 ```
 #感谢
 https://github.com/caixiaojia/wxshare
+
 https://github.com/AngusFu/uc-qq-share-to-wechat
+
 https://github.com/ZouStrong/Project-Wap-Share
