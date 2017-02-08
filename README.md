@@ -10,7 +10,7 @@ var config = {
             img_title: document.title,
             from: window.location.host,
 			
-			// 如果使用UC、QQ浏览器可调用其分享接口
+			// 如果使用UC、QQ浏览器会调用其分享接口
 			// 1：底部(有微信)、有右上角
 			// 2: 底部(有微信)、无右上角
 			// 3: 底部(无微信)、有右上角
@@ -27,3 +27,7 @@ var config = {
             defaultShowType: 6 //默认显示类型6
         };
 ```
+#感谢
+https://github.com/caixiaojia/wxshare
+https://github.com/AngusFu/uc-qq-share-to-wechat
+https://github.com/ZouStrong/Project-Wap-Share
