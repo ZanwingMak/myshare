@@ -28,8 +28,6 @@ var config = {
         };
 ```
 #感谢
-https://github.com/caixiaojia/wxshare
-
-https://github.com/AngusFu/uc-qq-share-to-wechat
-
-https://github.com/ZouStrong/Project-Wap-Share
+https://github.com/caixiaojia/wxshare<br>
+https://github.com/AngusFu/uc-qq-share-to-wechat<br>
+https://github.com/ZouStrong/Project-Wap-Share<br>
