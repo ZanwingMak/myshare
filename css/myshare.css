@@ -27,15 +27,13 @@
 }
 
 #myshare .label .close{
-    /* flex: 0.1; */
     text-align: right;
     padding-right: 5%;
     background: url(../img/close.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: 100% 0;
-    width: 36px;
-    height: 20px;
+    margin-right: 5%;
 }
 
 #myshare .list {
