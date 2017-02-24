@@ -1,5 +1,5 @@
 # 分享组件
-一个东凑西凑改出来的分享组件,效果貌似还行~<br><br>
+一个东凑西凑魔改出来的分享组件, 加上平时遇到客户的需求会顺便加上，效果貌似还行~<br><br>
 Demo：http://demo.gfwboom.com/myshare
 ```
 var config = {
