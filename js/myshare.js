@@ -1164,6 +1164,10 @@ var myshare = function (elementNode, config) {
                 '</span></div>'+
                 '</a>' +
                 '</div></div>';
+        } else if (type === 8) { /*仅右上角*/
+            var html =
+                '<div class="layer-shade"></div>'+
+                '<div class="wxshare" style="display: block;"></div>';
         }else{
 
         }
@@ -1185,6 +1189,9 @@ var myshare = function (elementNode, config) {
                 }
             }
         });
+        if(showType == 8){
+            $('#myshareBox').fadeOut();
+        }
     }
     this.bindEvents = function() {
         var close = document.querySelector('#myshare .close, #myshareBox .closewx');
@@ -1195,9 +1202,11 @@ var myshare = function (elementNode, config) {
                 $('.qrcode-mask').remove();
             });
         });
-        close.addEventListener('click', function () {
-            closeShare();
-        });
+        if(close){
+            close.addEventListener('click', function () {
+                closeShare();
+            });
+        }
         layer_shade.addEventListener('click', function () {
             closeShare();
         });
@@ -1303,16 +1312,20 @@ var myshare = function (elementNode, config) {
             showType = 2;
             this.html(showType);
         } else if (isWeixin) {
-            showType = 7;
+            if(this.appShowType.weixin){
+                showType = this.appShowType.weixin;
+            }else{
+                showType = 7;
+            }
             this.html(showType);
         } else if (isInnerQQ){
             showType = 3;
             this.html(showType);
         } else {
+            console.log(typeof(this.appShowType.weixin)!='undefined');
             var _3rdAppKeys = getObjectKeys(this.appShowType);
             var _3rdAppVals = getObjectValues(this.appShowType);
             var _3rdAppUA = UA;
-            // console.log(_3rdAppUA);
             for(var i=0;i<_3rdAppKeys.length;i++){
                 if( (_3rdAppUA.indexOf(_3rdAppKeys[i])) > -1 ){
                     showType = _3rdAppVals[i];
