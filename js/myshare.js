@@ -1312,7 +1312,7 @@ var myshare = function (elementNode, config) {
             showType = 2;
             this.html(showType);
         } else if (isWeixin) {
-            if(this.appShowType.weixin){
+            if(this.appShowType.weixin){//用户配置了weixin的分享显示模式，否则默认用7
                 showType = this.appShowType.weixin;
             }else{
                 showType = 7;
@@ -1322,7 +1322,6 @@ var myshare = function (elementNode, config) {
             showType = 3;
             this.html(showType);
         } else {
-            console.log(typeof(this.appShowType.weixin)!='undefined');
             var _3rdAppKeys = getObjectKeys(this.appShowType);
             var _3rdAppVals = getObjectValues(this.appShowType);
             var _3rdAppUA = UA;
