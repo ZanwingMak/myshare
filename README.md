@@ -1,6 +1,7 @@
 # 分享组件
 一个东凑西凑魔改出来的分享组件, 加上平时遇到客户的需求会顺便加上，效果貌似还行~<br><br>
-Demo：http://demo.gfwboom.com/myshare
+Demo：http://demo.gfwboom.com/myshare<br>
+博客：https://gfwboom.com/archives/code/javascript/2017/02/08/271.html<br>
 ```
 var config = {
             url: window.location.href,
