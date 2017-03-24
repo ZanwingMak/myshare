@@ -1043,12 +1043,14 @@ var myshare = function (elementNode, config) {
                 '<div class="wxshare"></div>'+
                 '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
                 '<div class="list clearfix">'+
+                '<div class="share_icon_list">'+
                 '<span data-app="sinaWeibo" class="myshare weibo"><i></i>新浪微博</span>'+
                 '<span data-app="weixin" class="myshare weixin"><i></i>微信好友</span>'+
                 '<span data-app="weixinFriend" class="myshare weixin_timeline"><i></i>微信朋友圈</span>'+
                 '<span data-app="QQ" class="myshare qq"><i></i>QQ好友</span>'+
                 '<span data-app="QZone" class="myshare qzone"><i></i>QQ空间</span>'+
                 '<span data-app="QRcode" class="myshare QRcode"><i></i>生成二维码</span>'+
+                '</div>'+
                 /* '<span data-app="" class="myshare more"><i></i>更多</span>'+*/
                 '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
                 '<a href="'+ document.location.href +'" target="_blank">' +
@@ -1062,12 +1064,14 @@ var myshare = function (elementNode, config) {
                 '<div class="layer-shade"></div>'+
                 '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
                 '<div class="list clearfix">'+
+                '<div class="share_icon_list">'+
                 '<span data-app="sinaWeibo" class="myshare weibo"><i></i>新浪微博</span>'+
                 '<span data-app="weixin" class="myshare weixin"><i></i>微信好友</span>'+
                 '<span data-app="weixinFriend" class="myshare weixin_timeline"><i></i>微信朋友圈</span>'+
                 '<span data-app="QQ" class="myshare qq"><i></i>QQ好友</span>'+
                 '<span data-app="QZone" class="myshare qzone"><i></i>QQ空间</span>'+
                 '<span data-app="QRcode" class="myshare QRcode"><i></i>生成二维码</span>'+
+                '</div>'+
                 '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
                 '<a href="'+ document.location.href +'" target="_blank">' +
                 '<div class="url"><span>' +
@@ -1081,10 +1085,12 @@ var myshare = function (elementNode, config) {
                 '<div class="wxshare"></div>'+
                 '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
                 '<div class="list clearfix">'+
+                '<div class="share_icon_list">'+
                 '<span data-app="sinaWeibo" class="myshare weibo"><i></i>新浪微博</span>'+
                 '<span data-app="QQ" class="myshare qq"><i></i>QQ好友</span>'+
                 '<span data-app="QZone" class="myshare qzone"><i></i>QQ空间</span>'+
                 '<span data-app="QRcode" class="myshare QRcode"><i></i>生成二维码</span>'+
+                '</div>'+
                 '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
                 '<a href="'+ document.location.href +'" target="_blank">' +
                 '<div class="url"><span>' +
@@ -1097,10 +1103,12 @@ var myshare = function (elementNode, config) {
                 '<div class="layer-shade"></div>'+
                 '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
                 '<div class="list clearfix">'+
+                '<div class="share_icon_list">'+
                 '<span data-app="sinaWeibo" class="myshare weibo"><i></i>新浪微博</span>'+
                 '<span data-app="QQ" class="myshare qq"><i></i>QQ好友</span>'+
                 '<span data-app="QZone" class="myshare qzone"><i></i>QQ空间</span>'+
                 '<span data-app="QRcode" class="myshare QRcode"><i></i>生成二维码</span>'+
+                '</div>'+
                 '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
                 '<a href="'+ document.location.href +'" target="_blank">' +
                 '<div class="url"><span>' +
@@ -1114,12 +1122,14 @@ var myshare = function (elementNode, config) {
                 '<div class="wxshare"></div>'+
                 '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
                 '<div class="list clearfix">'+
+                '<div class="share_icon_list">'+
                 '<span data-app="sinaWeibo" class="myshare weibo"><i></i>新浪微博</span>'+
                 '<span data-app="weixin" class="myshare weixin"><i></i>微信好友</span>'+
                 '<span data-app="weixinFriend" class="myshare weixin_timeline"><i></i>微信朋友圈</span>'+
                 '<span data-app="QQ" class="myshare qq"><i></i>QQ好友</span>'+
                 '<span data-app="QZone" class="myshare qzone"><i></i>QQ空间</span>'+
                 '<span data-app="QRcode" class="myshare QRcode"><i></i>生成二维码</span>'+
+                '</div>'+
                 '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
                 '<a href="'+ document.location.href +'" target="_blank">' +
                 '<div class="url"><span>' +
@@ -1132,12 +1142,14 @@ var myshare = function (elementNode, config) {
                 '<div class="layer-shade"></div>'+
                 '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
                 '<div class="list clearfix">'+
+                '<div class="share_icon_list">'+
                 '<span data-app="sinaWeibo" class="myshare weibo"><i></i>新浪微博</span>'+
                 '<span data-app="weixin" class="myshare weixin"><i></i>微信好友</span>'+
                 '<span data-app="weixinFriend" class="myshare weixin_timeline"><i></i>微信朋友圈</span>'+
                 '<span data-app="QQ" class="myshare qq"><i></i>QQ好友</span>'+
                 '<span data-app="QZone" class="myshare qzone"><i></i>QQ空间</span>'+
                 '<span data-app="QRcode" class="myshare QRcode"><i></i>生成二维码</span>'+
+                '</div>'+
                 '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
                 '<a href="'+ document.location.href +'" target="_blank">' +
                 '<div class="url"><span>' +
@@ -1151,12 +1163,14 @@ var myshare = function (elementNode, config) {
                 '<div class="wxshare" style="display: none;"></div>'+
                 '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
                 '<div class="list clearfix">'+
+                '<div class="share_icon_list">'+
                 '<span data-app="sinaWeibo" class="myshare weibo"><i></i>新浪微博</span>'+
                 '<span data-app="weixin" class="myshare weixin"><i></i>微信好友</span>'+
                 '<span data-app="weixinFriend" class="myshare weixin_timeline"><i></i>微信朋友圈</span>'+
                 '<span data-app="QQ" class="myshare qq"><i></i>QQ好友</span>'+
                 '<span data-app="QZone" class="myshare qzone"><i></i>QQ空间</span>'+
                 '<span data-app="QRcode" class="myshare QRcode"><i></i>生成二维码</span>'+
+                '</div>'+
                 '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
                 '<a href="'+ document.location.href +'" target="_blank">' +
                 '<div class="url"><span>' +
@@ -1312,7 +1326,7 @@ var myshare = function (elementNode, config) {
             showType = 2;
             this.html(showType);
         } else if (isWeixin) {
-            if(this.appShowType.weixin){//用户配置了weixin的分享显示模式，否则默认用7
+            if(this.appShowType.weixin){
                 showType = this.appShowType.weixin;
             }else{
                 showType = 7;
@@ -1322,6 +1336,7 @@ var myshare = function (elementNode, config) {
             showType = 3;
             this.html(showType);
         } else {
+            /*console.log(typeof(this.appShowType.weixin)!='undefined');*/
             var _3rdAppKeys = getObjectKeys(this.appShowType);
             var _3rdAppVals = getObjectValues(this.appShowType);
             var _3rdAppUA = UA;
