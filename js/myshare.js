@@ -1024,8 +1024,8 @@ var myshare = function (elementNode, config) {
                     break;
                 case "QRcode" :
                     closeShare();
-                    $('body').append($('<div class="qrcode-mask" style="display: none;"><div class="qrcode-box"><h3>长按即可保存或者识别二维码</h3><div class="qrcode"><span class="qrcode-close"></span></div></div></div>'))
-                    var qrcode = new QRCode($(".qrcode").get(0), {
+                    $('body').append($('<div class="qrcode-mask" style="display: none;"><div class="qrcode-box"><h3>长按即可保存或者识别二维码</h3><div class="myshare_qrcode"><span class="qrcode-close"></span></div></div></div>'))
+                    var qrcode = new QRCode($(".myshare_qrcode").get(0), {
                         width : 160,height : 160
                     });
                     qrcode.makeCode(url);
@@ -1049,7 +1049,7 @@ var myshare = function (elementNode, config) {
                 '<span data-app="weixinFriend" class="myshare weixin_timeline"><i></i>微信朋友圈</span>'+
                 '<span data-app="QQ" class="myshare qq"><i></i>QQ好友</span>'+
                 '<span data-app="QZone" class="myshare qzone"><i></i>QQ空间</span>'+
-                '<span data-app="QRcode" class="myshare QRcode"><i></i>生成二维码</span>'+
+                '<span data-app="QRcode" class="myshare generate_QRcode"><i></i>生成二维码</span>'+
                 '</div>'+
                 /* '<span data-app="" class="myshare more"><i></i>更多</span>'+*/
                 '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
@@ -1070,7 +1070,7 @@ var myshare = function (elementNode, config) {
                 '<span data-app="weixinFriend" class="myshare weixin_timeline"><i></i>微信朋友圈</span>'+
                 '<span data-app="QQ" class="myshare qq"><i></i>QQ好友</span>'+
                 '<span data-app="QZone" class="myshare qzone"><i></i>QQ空间</span>'+
-                '<span data-app="QRcode" class="myshare QRcode"><i></i>生成二维码</span>'+
+                '<span data-app="QRcode" class="myshare generate_QRcode"><i></i>生成二维码</span>'+
                 '</div>'+
                 '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
                 '<a href="'+ document.location.href +'" target="_blank">' +
@@ -1089,7 +1089,7 @@ var myshare = function (elementNode, config) {
                 '<span data-app="sinaWeibo" class="myshare weibo"><i></i>新浪微博</span>'+
                 '<span data-app="QQ" class="myshare qq"><i></i>QQ好友</span>'+
                 '<span data-app="QZone" class="myshare qzone"><i></i>QQ空间</span>'+
-                '<span data-app="QRcode" class="myshare QRcode"><i></i>生成二维码</span>'+
+                '<span data-app="QRcode" class="myshare generate_QRcode"><i></i>生成二维码</span>'+
                 '</div>'+
                 '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
                 '<a href="'+ document.location.href +'" target="_blank">' +
@@ -1107,7 +1107,7 @@ var myshare = function (elementNode, config) {
                 '<span data-app="sinaWeibo" class="myshare weibo"><i></i>新浪微博</span>'+
                 '<span data-app="QQ" class="myshare qq"><i></i>QQ好友</span>'+
                 '<span data-app="QZone" class="myshare qzone"><i></i>QQ空间</span>'+
-                '<span data-app="QRcode" class="myshare QRcode"><i></i>生成二维码</span>'+
+                '<span data-app="QRcode" class="myshare generate_QRcode"><i></i>生成二维码</span>'+
                 '</div>'+
                 '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
                 '<a href="'+ document.location.href +'" target="_blank">' +
@@ -1116,7 +1116,7 @@ var myshare = function (elementNode, config) {
                 '</span></div>'+
                 '</a>' +
                 '</div></div>';
-        } else if (type === 5) { /*底部(有微信、但点击后提示复制下方链接)、有右上角*/
+        } else if (type === 5) { /*底部(有微信但点击后提示复制下方链接)、有右上角*/
             var html =
                 '<div class="layer-shade"></div>'+
                 '<div class="wxshare"></div>'+
@@ -1128,7 +1128,7 @@ var myshare = function (elementNode, config) {
                 '<span data-app="weixinFriend" class="myshare weixin_timeline"><i></i>微信朋友圈</span>'+
                 '<span data-app="QQ" class="myshare qq"><i></i>QQ好友</span>'+
                 '<span data-app="QZone" class="myshare qzone"><i></i>QQ空间</span>'+
-                '<span data-app="QRcode" class="myshare QRcode"><i></i>生成二维码</span>'+
+                '<span data-app="QRcode" class="myshare generate_QRcode"><i></i>生成二维码</span>'+
                 '</div>'+
                 '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
                 '<a href="'+ document.location.href +'" target="_blank">' +
@@ -1137,7 +1137,7 @@ var myshare = function (elementNode, config) {
                 '</span></div>'+
                 '</a>' +
                 '</div></div>';
-        } else if (type === 6) { /*底部(有微信、但点击后提示复制下方链接)、无右上角*/
+        } else if (type === 6) { /*底部(有微信但点击后提示复制下方链接)、无右上角*/
             var html =
                 '<div class="layer-shade"></div>'+
                 '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
@@ -1148,7 +1148,7 @@ var myshare = function (elementNode, config) {
                 '<span data-app="weixinFriend" class="myshare weixin_timeline"><i></i>微信朋友圈</span>'+
                 '<span data-app="QQ" class="myshare qq"><i></i>QQ好友</span>'+
                 '<span data-app="QZone" class="myshare qzone"><i></i>QQ空间</span>'+
-                '<span data-app="QRcode" class="myshare QRcode"><i></i>生成二维码</span>'+
+                '<span data-app="QRcode" class="myshare generate_QRcode"><i></i>生成二维码</span>'+
                 '</div>'+
                 '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
                 '<a href="'+ document.location.href +'" target="_blank">' +
@@ -1157,7 +1157,7 @@ var myshare = function (elementNode, config) {
                 '</span></div>'+
                 '</a>' +
                 '</div></div>';
-        } else if (type === 7) { /*底部(有微信、但点击后提示复制下方链接)、点击微信或朋友圈才显示右上角*/
+        } else if (type === 7) { /*底部(有微信但点击后提示复制下方链接)、点击微信或朋友圈才显示右上角*/
             var html =
                 '<div class="layer-shade"></div>'+
                 '<div class="wxshare" style="display: none;"></div>'+
@@ -1169,7 +1169,7 @@ var myshare = function (elementNode, config) {
                 '<span data-app="weixinFriend" class="myshare weixin_timeline"><i></i>微信朋友圈</span>'+
                 '<span data-app="QQ" class="myshare qq"><i></i>QQ好友</span>'+
                 '<span data-app="QZone" class="myshare qzone"><i></i>QQ空间</span>'+
-                '<span data-app="QRcode" class="myshare QRcode"><i></i>生成二维码</span>'+
+                '<span data-app="QRcode" class="myshare generate_QRcode"><i></i>生成二维码</span>'+
                 '</div>'+
                 '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
                 '<a href="'+ document.location.href +'" target="_blank">' +
@@ -1182,7 +1182,143 @@ var myshare = function (elementNode, config) {
             var html =
                 '<div class="layer-shade"></div>'+
                 '<div class="wxshare" style="display: block;"></div>';
-        }else{
+        } else if (type === 9) { /*底部(无QQ、无QQ空间、无微信)、无右上角*/
+            var html =
+                '<div class="layer-shade"></div>'+
+                '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
+                '<div class="list clearfix">'+
+                '<div class="share_icon_list">'+
+                '<span data-app="sinaWeibo" class="myshare weibo"><i></i>新浪微博</span>'+
+                '<span data-app="QRcode" class="myshare generate_QRcode"><i></i>生成二维码</span>'+
+                '</div>'+
+                '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
+                '<a href="'+ document.location.href +'" target="_blank">' +
+                '<div class="url"><span>' +
+                document.location.href +
+                '</span></div>'+
+                '</a>' +
+                '</div></div>';
+        } else if (type === 10) { /*底部(无QQ、无QQ空间、无微信)、有右上角*/
+            var html =
+                '<div class="layer-shade"></div>'+
+                '<div class="wxshare" style="display: block;"></div>'+
+                '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
+                '<div class="list clearfix">'+
+                '<div class="share_icon_list">'+
+                '<span data-app="sinaWeibo" class="myshare weibo"><i></i>新浪微博</span>'+
+                '<span data-app="QRcode" class="myshare generate_QRcode"><i></i>生成二维码</span>'+
+                '</div>'+
+                '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
+                '<a href="'+ document.location.href +'" target="_blank">' +
+                '<div class="url"><span>' +
+                document.location.href +
+                '</span></div>'+
+                '</a>' +
+                '</div></div>';
+        } else if (type === 11) { /*底部(无QQ、无QQ空间、有微信但点击后提示复制下方链接)、点击微信或朋友圈才显示右上角*/
+            var html =
+                '<div class="layer-shade"></div>'+
+                '<div class="wxshare" style="display: none;"></div>'+
+                '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
+                '<div class="list clearfix">'+
+                '<div class="share_icon_list">'+
+                '<span data-app="sinaWeibo" class="myshare weibo"><i></i>新浪微博</span>'+
+                '<span data-app="weixin" class="myshare weixin"><i></i>微信好友</span>'+
+                '<span data-app="weixinFriend" class="myshare weixin_timeline"><i></i>微信朋友圈</span>'+
+                '<span data-app="QRcode" class="myshare generate_QRcode"><i></i>生成二维码</span>'+
+                '</div>'+
+                '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
+                '<a href="'+ document.location.href +'" target="_blank">' +
+                '<div class="url"><span>' +
+                document.location.href +
+                '</span></div>'+
+                '</a>' +
+                '</div></div>';
+        } else if (type === 12) { /*底部(无QQ、无QQ空间、有微信但点击后提示复制下方链接)、无右上角*/
+            var html =
+                '<div class="layer-shade"></div>'+
+                '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
+                '<div class="list clearfix">'+
+                '<div class="share_icon_list">'+
+                '<span data-app="sinaWeibo" class="myshare weibo"><i></i>新浪微博</span>'+
+                '<span data-app="weixin" class="myshare weixin"><i></i>微信好友</span>'+
+                '<span data-app="weixinFriend" class="myshare weixin_timeline"><i></i>微信朋友圈</span>'+
+                '<span data-app="QRcode" class="myshare generate_QRcode"><i></i>生成二维码</span>'+
+                '</div>'+
+                '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
+                '<a href="'+ document.location.href +'" target="_blank">' +
+                '<div class="url"><span>' +
+                document.location.href +
+                '</span></div>'+
+                '</a>' +
+                '</div></div>';
+        } else if (type === 13) { /*底部(无微博、无QQ、无QQ空间、无微信)、无右上角*/
+            var html =
+                '<div class="layer-shade"></div>'+
+                '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
+                '<div class="list clearfix">'+
+                '<div class="share_icon_list">'+
+                '<span data-app="QRcode" class="myshare generate_QRcode"><i></i>生成二维码</span>'+
+                '</div>'+
+                '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
+                '<a href="'+ document.location.href +'" target="_blank">' +
+                '<div class="url"><span>' +
+                document.location.href +
+                '</span></div>'+
+                '</a>' +
+                '</div></div>';
+        } else if (type === 14) { /*底部(无微博、无QQ、无QQ空间、无微信)、有右上角*/
+            var html =
+                '<div class="layer-shade"></div>'+
+                '<div class="wxshare" style="display: block;"></div>'+
+                '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
+                '<div class="list clearfix">'+
+                '<div class="share_icon_list">'+
+                '<span data-app="QRcode" class="myshare generate_QRcode"><i></i>生成二维码</span>'+
+                '</div>'+
+                '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
+                '<a href="'+ document.location.href +'" target="_blank">' +
+                '<div class="url"><span>' +
+                document.location.href +
+                '</span></div>'+
+                '</a>' +
+                '</div></div>';
+        } else if (type === 15) { /*底部(无微博、无QQ、无QQ空间、有微信但点击后提示复制下方链接)、点击微信或朋友圈才显示右上角*/
+            var html =
+                '<div class="layer-shade"></div>'+
+                '<div class="wxshare" style="display: none;"></div>'+
+                '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
+                '<div class="list clearfix">'+
+                '<div class="share_icon_list">'+
+                '<span data-app="weixin" class="myshare weixin"><i></i>微信好友</span>'+
+                '<span data-app="weixinFriend" class="myshare weixin_timeline"><i></i>微信朋友圈</span>'+
+                '<span data-app="QRcode" class="myshare generate_QRcode"><i></i>生成二维码</span>'+
+                '</div>'+
+                '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
+                '<a href="'+ document.location.href +'" target="_blank">' +
+                '<div class="url"><span>' +
+                document.location.href +
+                '</span></div>'+
+                '</a>' +
+                '</div></div>';
+        } else if (type === 16) { /*底部(无微博、无QQ、无QQ空间、有微信但点击后提示复制下方链接)、无右上角*/
+            var html =
+                '<div class="layer-shade"></div>'+
+                '<div id="myshare"><div class="label"><span class="title">分享至：</span><span class="close"></span></div>'+
+                '<div class="list clearfix">'+
+                '<div class="share_icon_list">'+
+                '<span data-app="weixin" class="myshare weixin"><i></i>微信好友</span>'+
+                '<span data-app="weixinFriend" class="myshare weixin_timeline"><i></i>微信朋友圈</span>'+
+                '<span data-app="QRcode" class="myshare generate_QRcode"><i></i>生成二维码</span>'+
+                '</div>'+
+                '<div class="intro">长按复制下方链接，去粘贴给好友吧：</div>' +
+                '<a href="'+ document.location.href +'" target="_blank">' +
+                '<div class="url"><span>' +
+                document.location.href +
+                '</span></div>'+
+                '</a>' +
+                '</div></div>';
+        } else{
 
         }
         var wrapper = document.createElement('div');
@@ -1195,10 +1331,10 @@ var myshare = function (elementNode, config) {
     function closeShare(){
         $('#myshare').slideUp(function () {
             $('#myshareBox').fadeOut();
-            if(showType == 5 || showType == 6 || showType == 7){
+            if(showType == 5 || showType == 6 || showType == 7 || showType == 11 || showType == 12 || showType == 15 || showType == 16){
                 $('#myshare .myshare').show();
                 $('.intro').text('长按复制下方链接，去粘贴给好友吧：')
-                if(showType == 7){
+                if(showType == 7 || showType == 11 || showType == 15){
                     hideRightUpTips();
                 }
             }
